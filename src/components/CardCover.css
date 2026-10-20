@@ -1,0 +1,41 @@
+.cover-inner {
+  background: #c38700;
+}
+
+.cover-sunburst {
+  position: absolute;
+  inset: -18%;
+  background:
+    radial-gradient(circle at 50% 52%, rgba(255, 225, 122, 0.28) 0%, transparent 46%),
+    repeating-conic-gradient(
+      from -3deg at 50% 52%,
+      #e8bf4d 0deg 7.5deg,
+      #c38700 7.5deg 15deg
+    );
+}
+
+.cover-title {
+  position: absolute;
+  left: 50%;
+  top: 91px;
+  width: 208px;
+  margin: 0;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: -0.24px;
+  line-height: 1.45;
+  text-align: center;
+  text-shadow: 0 0 62px rgba(255, 225, 122, 0.91);
+}
+
+.cover-silhouette {
+  position: absolute;
+  left: 50%;
+  top: calc(50% + 36px);
+  width: 369px;
+  height: 369px;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 72px rgba(255, 225, 122, 0.65));
+}

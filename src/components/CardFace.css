@@ -1,0 +1,8 @@
+.card-face {
+  display: block;
+  width: 500px;
+  height: 700px;
+  max-width: none;
+  pointer-events: none;
+  user-select: none;
+}

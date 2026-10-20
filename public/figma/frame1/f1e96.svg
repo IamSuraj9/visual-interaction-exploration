@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="187.087" height="37.1846" viewBox="0 0 187.087 37.1846" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Union">
+<path d="M169.692 18.5918L182.933 35.1846H4.15437L17.3926 18.5918L4.15437 2H182.933L169.692 18.5918Z" fill="#3F3155"/>
+<mask id="stroke0_0_4" maskUnits="userSpaceOnUse" x="-0.845634" y="0" width="188" height="38" fill="black">
+<rect fill="white" x="-0.845634" width="188" height="38"/>
+<path d="M169.692 18.5918L182.933 35.1846H4.15437L17.3926 18.5918L4.15437 2H182.933L169.692 18.5918Z"/>
+</mask>
+<path d="M169.692 18.5918L182.933 35.1846H4.15437L17.3926 18.5918L4.15437 2H182.933L169.692 18.5918Z" stroke-width="4" stroke="white" mask="url(#stroke0_0_4)"/>
+</g>
+</svg>
