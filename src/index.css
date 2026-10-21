@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 
 @font-face {
   font-family: 'Sportsball';
@@ -12,6 +12,28 @@
   --gold-pale: #ffe17a;
   --sports: 'Sportsball', 'Anton', Impact, sans-serif;
   --label: 'Inter', system-ui, sans-serif;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --z-dropdown: 100;
+  --z-modal: 200;
+  --z-tooltip: 300;
+  --z-toast: 400;
+
+  --border-hairline: 1px;
+
+  --elevation-raised: 0 0 0 1px rgb(255 255 255 / 0.09);
+  --elevation-raised-hover: 0 0 0 1px rgb(255 255 255 / 0.14);
+
+  color-scheme: dark;
+
+  @media only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi) {
+    --border-hairline: 0.5px;
+  }
 }
 
 *,
@@ -29,14 +51,28 @@ body,
 
 body {
   font-family: var(--label);
+  font-weight: var(--font-weight-normal);
+  -webkit-font-smoothing: antialiased;
   background:
-    radial-gradient(1200px 700px at 50% 0%, #3a2d18 0%, #121014 55%, #09080b 100%);
+    radial-gradient(
+      1200px 700px at 50% 0%,
+      #3a2d18 0%,
+      #241c14 28%,
+      #121014 62%,
+      #09080b 100%
+    );
+  color: #f6ecd0;
+}
+
+::selection {
+  background: rgb(255 255 255 / 0.16);
   color: #f6ecd0;
 }
 
 button,
 a {
   font: inherit;
+  font-weight: inherit;
 }
 
 img {

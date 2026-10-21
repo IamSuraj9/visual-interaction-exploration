@@ -2,7 +2,11 @@
   min-height: 100svh;
   display: grid;
   place-items: center;
-  padding: 32px 20px 48px;
+  padding:
+    calc(32px + env(safe-area-inset-top))
+    calc(20px + env(safe-area-inset-right))
+    calc(48px + env(safe-area-inset-bottom))
+    calc(20px + env(safe-area-inset-left));
 }
 
 .stage {
@@ -16,25 +20,36 @@
   margin: 0;
   font-family: var(--label);
   font-size: 13px;
+  font-weight: var(--font-weight-medium);
   letter-spacing: 0.28em;
   text-transform: uppercase;
+  text-wrap: balance;
   color: var(--gold-pale);
   opacity: 0.85;
 }
 
 .hint {
   margin: 0;
+  max-width: 36em;
   font-size: 13px;
+  font-weight: var(--font-weight-normal);
   letter-spacing: 0.04em;
+  text-wrap: balance;
+  text-align: center;
   color: rgba(246, 236, 208, 0.72);
 }
 
 .hint kbd {
   display: inline-block;
+  min-width: 1.6em;
   padding: 1px 6px;
-  border: 1px solid rgba(229, 184, 61, 0.45);
+  border: var(--border-hairline) solid rgba(229, 184, 61, 0.45);
   border-radius: 4px;
   color: var(--gold-pale);
   font-family: var(--label);
   font-size: 11px;
+  font-weight: var(--font-weight-medium);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.4;
+  text-align: center;
 }
